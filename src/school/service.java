@@ -222,7 +222,9 @@ public class service {
     }
     public QLgiangday[] sortBysotietgiangday(QLgiangday[] ql){
         for (int i = 0; i < ql.length; i++) {
-            if (ql[i]==null) break;
+            if (ql[i]==null) {
+                break;
+            }
             for (int j = i; j < ql.length; j++) {
                 if (ql[j]==null) {
                     break;
@@ -249,9 +251,5 @@ public class service {
             System.out.print(" Tog tien luong giang vien : "+money[i]);
         }
     }
-
-
-
-
 
 }
