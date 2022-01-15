@@ -85,10 +85,10 @@ public class service {
     public void showMonHoc(Monhoc[] monhocs){
         System.out.println("Danh sach mon hoc:");
         for (int i = 0; i < 100; i++) {
-            if(this.monhocs[i]==null) {
+            if(monhocs[i]==null) {
                 break;
             }
-            System.out.println("STT "+i+":"+ this.monhocs[i].toString());
+            System.out.println("STT "+i+":"+ monhocs[i].toString());
         }
     }
 

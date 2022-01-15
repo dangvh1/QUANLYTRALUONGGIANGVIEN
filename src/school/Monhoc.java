@@ -80,9 +80,9 @@ public class Monhoc implements Imonhoc {
     public String toString() {
         return "Monhoc{" +
                 "tenmonhoc='" + tenmonhoc + '\'' +
-                ", tongsotiet='" + tongsotiet + '\'' +
-                ", sotietlythuyet='" + sotietlythuyet + '\'' +
-                ", muckinhphi='" + muckinhphi + '\'' +
+                ", tongsotiet=" + tongsotiet +
+                ", sotietlythuyet=" + sotietlythuyet +
+                ", muckinhphi=" + muckinhphi +
                 '}';
     }
 }
