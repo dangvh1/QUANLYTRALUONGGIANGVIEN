@@ -5,7 +5,7 @@ import monhoc.QLgiangday;
 
 import java.util.Scanner;
 
-public class Monhoc {
+public class Monhoc implements Runnable {
     private int id;
     private String name;
     private int tongsotiet;
@@ -75,9 +75,20 @@ public class Monhoc {
         AUTO_ID = autoId;
     }
 
-    public void informSubjectInfo() {
-        this.setId(Monhoc.AUTO_ID);
 
+    @Override
+    public String toString() {
+        return "Subject{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", lessonTotal=" + tongsotiet +
+                ", theoryLesson=" + sotietlythuyet +
+                ", expense=" + muckinhphi +
+                '}';
+    }
+    @Override
+    public void inputSubjectInfo() {
+        this.setId(Monhoc.AUTO_ID);
         System.out.println("Nhập tên môn học: ");
         this.name = new Scanner(System.in).nextLine();
         boolean check = true;
@@ -106,16 +117,5 @@ public class Monhoc {
             }
         } while (!check);
         Monhoc.AUTO_ID++;
-    }
-
-    @Override
-    public String toString() {
-        return "Subject{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", lessonTotal=" + tongsotiet +
-                ", theoryLesson=" + sotietlythuyet +
-                ", expense=" + muckinhphi +
-                '}';
     }
 }

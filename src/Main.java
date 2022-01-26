@@ -176,7 +176,7 @@ public class Main {
         monhocs = new Monhoc[countSubject];
         for (int i = 0; i < monhocs.length; i++) {
             Monhoc monhoc = new Monhoc();
-            monhoc.informSubjectInfo();
+            monhoc.inputSubjectInfo();
             monhocs[i] = monhoc;
         }
     }
